@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Form Registrasi </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body bgcolor="blue"> 
+    <h2>Form Registrasi</h2>
+    <form action="" method="post">
+    <fieldset><legend>Registrasi</legend>
+        <label for="username">Name  :<span class="required" >*</span></label>
+        <div>
+          <input type="text" name="name" required placeholder="username">
+        </div>
+        <label for="password">password :<span class="required">*</span></label>
+        <div>
+          <input type="password" name="password" required placeholder="masukan password">
+        </div>
+    </fieldset>
+    <fieldset><legend>Data Pribadi</legend>
+        <label for="nama">Nama Lengkap<span class="required">*</span></label>
+        <div>
+            <input type="text" name="Nama" required placeholder="Nama Lengkap">
+        </div>
+        <label>Alamat E-mail<span class="required">*</span></label>
+        <div>
+            <input type="email" name="email" cols="33" rows="4" required placeholder="************">
+        </div>
+        <label for="tanggal lahir">Tanggal lahir :<span class="required">*</span></label>
+        <div>   
+            <input type="date" name="tanggal" cols="33" rows="4" required placeholder="tanggal lahir">
+        </div>
+        <label>No Handphone<span class="required">*</span></label>
+        <div>
+            <input type="number" name="No.Hp" cols="33" rows="4" required placeholder="No.Hp 08xxxxxxxxxx">
+        </div>
+        <div>
+            <label>Jenis Kelamin<span class="required">*</span><br></label>
+            <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+            <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
+        </div>   
+        <label>Agama :</label>
+        <div>
+            <p>
+                <select name="agama">
+                    <option value="islam">Islam</option>
+                    <option value="kristen">Kristen</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="budha">Budha</option>
+                </select>
+            </p>
+        </div>
+        <label for="detail_alamat">Alamat :</label>
+        <div>
+            <textarea name="alamatlengkap" id="alamatlengkap" cols="33" rows="4"></textarea>
+        </div> 
+        <label>Tentang Diri:</label>
+        <div>
+            <textarea name="biografi" cols="33" rows="4"></textarea>
+        </div>
+        <label>Kursus:<span class="required">*</span><br></label>
+        <div>
+            <label><input type="checkbox" value="Computer" required>Computer</label>
+            <label><input type="checkbox" value="Menyani" required>Menyanyi</label>
+            <label><input type="checkbox" value="Las" required>Las</label>
+        </div>
+        <label>Tujuan</label>
+        <div>
+            <input type="textarea" name="tujuan" cols="33" rows="4" required placeholder="Tujuan memgikuti Kursus">
+        </div>
+        <label for="metodepembayaran">Metode Pembayaran :</label>
+        <div>
+            <input type="radio" name="metodepembayaran" id="metodepembayaran" value="tunai">Bayar Tunai
+            <input type="radio" name="metodepembayaran" id="metodepembayaran" value="transfer">Transfer
+            <input type="radio" name="metodepembayaran" id="metodepembayaran" value="kredit">Kredit
+        </div>
+        <div>
+            <button type="submit" cols="10" value="Sign In"> Daftar </button>
+            <button type="reset" value="Reset"> Reset </button>
+        </div>
+        </fieldset>
+</body>
+</html>
